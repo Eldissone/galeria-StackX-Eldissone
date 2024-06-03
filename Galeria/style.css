@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dosis", sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    padding: 10px;
+}
+
+#imagensContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 700px;
+    height: auto;
+    padding: 10px;
+    border: 2px solid green;
+}
+
+.ImagensAll {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    flex-wrap: 1;
+    flex-basis: 200;
+    transition: .5s ease-in-out;
+}
+
+.ImagensAll:hover {
+    transform: scale(1.1);
+}
+
+.botaoRemover, .btnAdd, #imagemInput {
+    margin: 5px;
+    border: none;
+    width: 200px;
+    background-color: #aa0b87;
+    padding: 5px;
+    color: #fff;
+}
+.botaoRemover:hover {
+    background-color: red;
+}
+.btnAdd:hover {
+    opacity: 0.7;
+}
